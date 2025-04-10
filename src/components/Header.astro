@@ -23,23 +23,28 @@ const navItems = [
   },
 ]
 ---
-
-<header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
->
-  <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
-  >
-    {
-      navItems.map((link) => (
-        <a
-          class="relative block px-2 py-2 transition hover:text-green-500 dark:hover:text-green-500"
-          aria-label={link.label}
-          href={link.url}
-        >
-          {link.title}
-        </a>
-      ))
-    }
-  </nav>
-</header>
+<header class="fixed top-0 z-10 flex items-center w-full px-10 py-4 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md">
+    <div class="flex items-center gap-8 w-full max-w-6xl">
+      <!-- Logo posicionado más a la izquierda -->
+      <img
+        class="rounded-full shadow-lg size-16"
+        src="../src/assets/LogoCalasanz.png"
+        alt="Logo Calasanz"
+      />
+      
+      <!-- Navegación posicionada a la izquierda después del logo -->
+      <nav class="flex items-center gap-6 text-gray-700 dark:text-gray-200">
+        {
+          navItems.map((link) => (
+            <a
+              class="relative block text-lg font-medium transition hover:text-green-500 dark:hover:text-green-500"
+              aria-label={link.label}
+              href={link.url}
+            >
+              {link.title}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+  </header>

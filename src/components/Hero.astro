@@ -1,16 +1,12 @@
 ---
 import SocialPill from "../components/SocialPill.astro"
 import MailIcon from "../assets/Mail.astro"
-import InstagramIcon from "../assets/Mail.astro"
+import InstagramIcon from "../assets/Instagram.astro"
+import TwitterIcon from "../assets/Twitter.astro"
 ---
 
-<div class="max-w-xl">
+<div class="max-w-xl mx-auto px-4">
     <div class="flex gap-4 mb-4">
-      <img
-        class="rounded-full shadow-lg size-25"
-        src="../src/assets/LogoCalasanz.png"
-        alt=""
-      />
       <a
         href="https://www.linkedin.com/in/rafael-basanta-gonz%C3%A1lez-755b092a6/"
         target="_blank"
@@ -22,23 +18,27 @@ import InstagramIcon from "../assets/Mail.astro"
     <h1
       class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
     >
-      Club deportivo Calasanz
+      Club Baloncesto Calasanz
     </h1>
     <p
       class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
     >
-      +4 años de experiencia. <strong
-        >Desarrollador Full-Stack</strong
-      > residente en Santander, España. Especializado en el diseño, desarrollo y mantenimiento de aplicaciones y sitios web. 
+      ¡Bienvenidos a nuestra página web oficial!
+      ⛹🏽‍♀️⛹🏼‍♂️💚🏀 
+      Canalejas Nº 8, Santander, Cantabria 39004 
     </p>
     <nav class="flex flex-wrap gap-4 mt-8">
       <SocialPill href="mailto:miduga@gmail.com">
         <MailIcon class="size-4" />
-        Contáctanos
+         Email
+      </SocialPill>
+      <SocialPill href="https://www.instagram.com/cbcalasanz/?hl=es">
+        <InstagramIcon class="size-4" />
+         Instagram
       </SocialPill>
       <SocialPill href="https://www.linkedin.com/in/rafael-basanta-gonz%C3%A1lez-755b092a6/">
-        <InstagramIcon class="size-4" />
-        Instagram
+        <TwitterIcon class="size-4" />
+         Twitter
       </SocialPill>
     </nav>
   </div>
